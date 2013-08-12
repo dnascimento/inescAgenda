@@ -1,0 +1,5 @@
+h2 Edit #{type}         
+form(method='post',action='/'+type+'s/'+d.id)
+	input(name=type+'[id]',value=d.id,type='hidden')
+	input(name='_method',value='PUT',type='hidden')
+	include fields

@@ -1,0 +1,8 @@
+h1 #{type} List
+ul
+	if(type == "meeting")
+		- each meeting in list
+			li= meeting.boss+' - '+meeting.client+' - '+meeting.date+' - '+meeting.location
+	if(type == 'customer')
+		- each customer in list
+			li= customer.name+' - '+customer.mobile+' - '+customer.address

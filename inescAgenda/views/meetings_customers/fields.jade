@@ -1,0 +1,36 @@
+
+if(type == "meeting")
+	div
+		label Boss:
+			input(name='meeting[boss]',value=d.boss||'')
+
+	div
+		label Client
+			input(name='meeting[client]',value=d.client||'')
+	div
+		label Date
+			input(name='meeting[date]',value=d.date||'')
+
+	div
+		label Location
+			input(name='meeting[location]',value=d.location||'')
+
+	div
+		input(type='submit',value='Save')
+
+
+if(type == "customer")
+	div
+		label Name:
+			input(name='customer[name]',value=d.name||'')
+
+	div
+		label Mobile
+			input(name='customer[mobile]',value=d.mobile||'')
+	div
+		label Address
+			input(name='customer[address]',value=d.address||'')
+
+	div
+		input(type='submit',value='Save')
+
